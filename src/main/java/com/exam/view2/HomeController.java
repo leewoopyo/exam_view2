@@ -21,10 +21,9 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	//프로젝트 실행시 해당 컨트롤러 메소드로 이동한다. 
+	
+	//프로젝트 시작 시 해당 URL로 이동한다. 
+	//프로젝트 실행하면 'localhost:8080//프로젝트명/' 이렇게 이동하는데, 맨끝 '/'가 해당 url 이다.
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		
